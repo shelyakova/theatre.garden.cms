@@ -1,9 +1,14 @@
 name: Deploy Sanity Studio
 
 on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   deploy:
