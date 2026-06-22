@@ -28,6 +28,6 @@ jobs:
         run: npm ci
 
       - name: Deploy Sanity Studio
-        run: npx sanity deploy theatre-garden --yes
+        run: npx sanity deploy --url theatre-garden --yes
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
